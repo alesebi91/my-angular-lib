@@ -2,7 +2,10 @@
   "name": "my-angular-lib-workspace",
   "version": "1.0.0",
   "scripts": {
-    "build": "ng-packagr -p projects/my-lib/ng-package.json"
+    "build": "ng-packagr -p projects/my-lib/ng-package.json",
+    "watch": "ng-packagr -p projects/my-lib/ng-package.json -w",
+    "link": "yarn build && cd dist/my-lib && yarn link",
+    "watch:link": "yarn link && yarn watch"
   },
   "devDependencies": {
     "@angular/compiler": "^21.0.0",
