@@ -4,8 +4,8 @@
   "scripts": {
     "build": "ng-packagr -p projects/my-lib/ng-package.json",
     "watch": "ng-packagr -p projects/my-lib/ng-package.json -w",
-    "link": "yarn build && cd dist/my-lib && yarn link",
-    "watch:link": "yarn link && yarn watch"
+    "link:debug": "yarn build && cd dist/my-lib && yarn link",
+    "watch:link": "yarn run link:debug && yarn watch"
   },
   "devDependencies": {
     "@angular/compiler": "^21.0.0",
