@@ -1,0 +1,19 @@
+{
+  "name": "my-angular-lib-workspace",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "ng-packagr -p projects/my-lib/ng-package.json"
+  },
+  "devDependencies": {
+    "@angular/compiler": "^21.0.0",
+    "@angular/compiler-cli": "^21.0.0",
+    "@angular/core": "^21.0.0",
+    "ng-packagr": "^21.0.0",
+    "typescript": "~5.6.0",
+    "tslib": "^2.6.0"
+  },
+  "peerDependencies": {
+    "@angular/common": "^21.0.0",
+    "@angular/core": "^21.0.0"
+  }
+}
